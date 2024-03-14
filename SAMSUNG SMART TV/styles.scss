@@ -1,0 +1,88 @@
+// Variables
+$primary-color: #007bff;
+
+// General styles
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+}
+
+// Navigation links
+.navbar-nav {
+    .nav-item {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+
+    .nav-link {
+        color: $primary-color;
+        &:hover {
+            color: darken($primary-color, 10%);
+        }
+    }
+}
+
+// Details section
+#about {
+    .details {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .img-fluid {
+            max-width: 80;
+            height: auto;
+        }
+    }
+}
+
+// Features section
+#features {
+    .feature-list {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            padding: 5px 0;
+        }
+    }
+
+    .row {
+        .col-md-3 {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+// Buy Now section
+#buy-now {
+    button {
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($primary-color, 10%);
+        }
+    }
+}
